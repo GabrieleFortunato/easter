@@ -22,6 +22,6 @@
  * @post l'anno deve essere compreso tra il 1584 e il 2499
  * @return
  */
-int get_year(void);
+int get_year();
 
 #endif /* GET_YEAR_GET_YEAR_H_ */
