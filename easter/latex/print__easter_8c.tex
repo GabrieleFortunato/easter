@@ -1,0 +1,130 @@
+\hypertarget{print__easter_8c}{}\section{src/print\+\_\+result/print\+\_\+easter.c File Reference}
+\label{print__easter_8c}\index{src/print\+\_\+result/print\+\_\+easter.\+c@{src/print\+\_\+result/print\+\_\+easter.\+c}}
+{\ttfamily \#include \char`\"{}print\+\_\+result/print\+\_\+easter.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{print__easter_8c_a47ea8806455e6aec01bcc5f3fed5bb05}{print\+\_\+april\+\_\+easter} (int year)
+\item 
+static void \hyperlink{print__easter_8c_ac5fa34d843fcb4e2accbf2e78f95058b}{print\+\_\+march\+\_\+easter} (int year)
+\item 
+static bool \hyperlink{print__easter_8c_adfdb7cdfd32f9dfd2390f4456dd875e7}{is\+\_\+april\+\_\+easter} (int year)
+\item 
+static void \hyperlink{print__easter_8c_aee5035b28ebb6e89da5354ad9ff07ab3}{print\+\_\+valid\+\_\+data} (int year)
+\item 
+static void \hyperlink{print__easter_8c_ab4824f17aa24fd017a883be07f4e4a5b}{print\+\_\+not\+\_\+valid\+\_\+data} ()
+\item 
+void \hyperlink{print__easter_8c_a9c83a5f6903780b6164ac7fbea4682d9}{print\+\_\+easter} (int year)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{print__easter_8c_adfdb7cdfd32f9dfd2390f4456dd875e7}\label{print__easter_8c_adfdb7cdfd32f9dfd2390f4456dd875e7}} 
+\index{print\+\_\+easter.\+c@{print\+\_\+easter.\+c}!is\+\_\+april\+\_\+easter@{is\+\_\+april\+\_\+easter}}
+\index{is\+\_\+april\+\_\+easter@{is\+\_\+april\+\_\+easter}!print\+\_\+easter.\+c@{print\+\_\+easter.\+c}}
+\subsubsection{\texorpdfstring{is\+\_\+april\+\_\+easter()}{is\_april\_easter()}}
+{\footnotesize\ttfamily static bool is\+\_\+april\+\_\+easter (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 18 of file print\+\_\+easter.\+c.
+
+
+
+References A\+P\+R\+IL, day(), month(), T\+EN, and Z\+E\+RO.
+
+
+
+Referenced by print\+\_\+valid\+\_\+data().
+
+\mbox{\Hypertarget{print__easter_8c_a47ea8806455e6aec01bcc5f3fed5bb05}\label{print__easter_8c_a47ea8806455e6aec01bcc5f3fed5bb05}} 
+\index{print\+\_\+easter.\+c@{print\+\_\+easter.\+c}!print\+\_\+april\+\_\+easter@{print\+\_\+april\+\_\+easter}}
+\index{print\+\_\+april\+\_\+easter@{print\+\_\+april\+\_\+easter}!print\+\_\+easter.\+c@{print\+\_\+easter.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+april\+\_\+easter()}{print\_april\_easter()}}
+{\footnotesize\ttfamily static void print\+\_\+april\+\_\+easter (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 10 of file print\+\_\+easter.\+c.
+
+
+
+References B\+AR, D\+A\+TE, day(), and month().
+
+
+
+Referenced by print\+\_\+valid\+\_\+data().
+
+\mbox{\Hypertarget{print__easter_8c_a9c83a5f6903780b6164ac7fbea4682d9}\label{print__easter_8c_a9c83a5f6903780b6164ac7fbea4682d9}} 
+\index{print\+\_\+easter.\+c@{print\+\_\+easter.\+c}!print\+\_\+easter@{print\+\_\+easter}}
+\index{print\+\_\+easter@{print\+\_\+easter}!print\+\_\+easter.\+c@{print\+\_\+easter.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+easter()}{print\_easter()}}
+{\footnotesize\ttfamily void print\+\_\+easter (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+Stampa la data della Pasqua 
+\begin{DoxyParams}{Parameters}
+{\em year} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 30 of file print\+\_\+easter.\+c.
+
+
+
+References is\+\_\+valid\+\_\+year(), print\+\_\+not\+\_\+valid\+\_\+data(), and print\+\_\+valid\+\_\+data().
+
+\mbox{\Hypertarget{print__easter_8c_ac5fa34d843fcb4e2accbf2e78f95058b}\label{print__easter_8c_ac5fa34d843fcb4e2accbf2e78f95058b}} 
+\index{print\+\_\+easter.\+c@{print\+\_\+easter.\+c}!print\+\_\+march\+\_\+easter@{print\+\_\+march\+\_\+easter}}
+\index{print\+\_\+march\+\_\+easter@{print\+\_\+march\+\_\+easter}!print\+\_\+easter.\+c@{print\+\_\+easter.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+march\+\_\+easter()}{print\_march\_easter()}}
+{\footnotesize\ttfamily static void print\+\_\+march\+\_\+easter (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 14 of file print\+\_\+easter.\+c.
+
+
+
+References B\+A\+R1, D\+A\+TE, day(), and month().
+
+
+
+Referenced by print\+\_\+valid\+\_\+data().
+
+\mbox{\Hypertarget{print__easter_8c_ab4824f17aa24fd017a883be07f4e4a5b}\label{print__easter_8c_ab4824f17aa24fd017a883be07f4e4a5b}} 
+\index{print\+\_\+easter.\+c@{print\+\_\+easter.\+c}!print\+\_\+not\+\_\+valid\+\_\+data@{print\+\_\+not\+\_\+valid\+\_\+data}}
+\index{print\+\_\+not\+\_\+valid\+\_\+data@{print\+\_\+not\+\_\+valid\+\_\+data}!print\+\_\+easter.\+c@{print\+\_\+easter.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+not\+\_\+valid\+\_\+data()}{print\_not\_valid\_data()}}
+{\footnotesize\ttfamily static void print\+\_\+not\+\_\+valid\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 26 of file print\+\_\+easter.\+c.
+
+
+
+References N\+O\+T\+\_\+\+V\+A\+L\+I\+D\+\_\+\+Y\+E\+AR.
+
+
+
+Referenced by print\+\_\+easter().
+
+\mbox{\Hypertarget{print__easter_8c_aee5035b28ebb6e89da5354ad9ff07ab3}\label{print__easter_8c_aee5035b28ebb6e89da5354ad9ff07ab3}} 
+\index{print\+\_\+easter.\+c@{print\+\_\+easter.\+c}!print\+\_\+valid\+\_\+data@{print\+\_\+valid\+\_\+data}}
+\index{print\+\_\+valid\+\_\+data@{print\+\_\+valid\+\_\+data}!print\+\_\+easter.\+c@{print\+\_\+easter.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+valid\+\_\+data()}{print\_valid\_data()}}
+{\footnotesize\ttfamily static void print\+\_\+valid\+\_\+data (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 22 of file print\+\_\+easter.\+c.
+
+
+
+References is\+\_\+april\+\_\+easter(), print\+\_\+april\+\_\+easter(), and print\+\_\+march\+\_\+easter().
+
+
+
+Referenced by print\+\_\+easter().
+

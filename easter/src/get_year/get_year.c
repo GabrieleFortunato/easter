@@ -7,7 +7,7 @@
 
 #include "get_year.h"
 
-int get_year(){
+int get_year(void){
 	int year=ZERO;
 	printf(STRING);
 	scanf(SPECIFIC_INT,&year);

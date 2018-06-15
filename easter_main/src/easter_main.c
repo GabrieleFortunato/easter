@@ -12,13 +12,12 @@
 #include "intro/intro.h"
 #include "get_year/get_year.h"
 #include "repeat/repeat.h"
+#include "close/close.h"
 #include "access/access.h"
-
-#define FILE_ACCESS_NOT_OPEN "Impossibile registrare su file l'accesso"
 
 void access(){
 	FILE* file = fopen(FILE_NAME,FILE_MODE);
-	file==NULL?printf(FILE_ACCESS_NOT_OPEN):print_access(file);
+	print_access(file);
 	fclose(file);
 }
 
@@ -27,6 +26,7 @@ void easter(){
 		intro();
 		print_easter(get_year());
 	} while(repeat());
+	close();
 }
 
 int main(void) {

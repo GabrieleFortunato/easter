@@ -1,0 +1,271 @@
+\hypertarget{easter_8c}{}\section{src/print\+\_\+result/easter/easter.c File Reference}
+\label{easter_8c}\index{src/print\+\_\+result/easter/easter.\+c@{src/print\+\_\+result/easter/easter.\+c}}
+{\ttfamily \#include \char`\"{}print\+\_\+result/easter/easter.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{easter_8c_ab8be717a2fb8538e343005978ef9a807}{a} (int year)
+\item 
+static int \hyperlink{easter_8c_abe4750233c5ba93314e53871633e04ab}{b} (int year)
+\item 
+static int \hyperlink{easter_8c_a818880d9709e9aada9922fd03e933025}{c} (int year)
+\item 
+static int \hyperlink{easter_8c_a7ff1e16e86b066be180847e6cf2c025e}{m} (int year)
+\item 
+static int \hyperlink{easter_8c_aea5342be37614c7e120c52101794dbfe}{n} (int year)
+\item 
+static int \hyperlink{easter_8c_a4157466fb1c5470a5c55d05e00d1ff98}{d} (int year)
+\item 
+static int \hyperlink{easter_8c_aa155af5393d59b409b7346ee13aa77c6}{e} (int year)
+\item 
+static bool \hyperlink{easter_8c_a59da15861b040d71106ad8872e81193b}{year\+\_\+min\+\_\+ten} (int year)
+\item 
+static bool \hyperlink{easter_8c_abbdc789636ae16180b84967212004a3f}{easter\+\_\+nineteen} (int year)
+\item 
+static bool \hyperlink{easter_8c_acd04e183806f7bee9082061c121563d4}{easter\+\_\+twentyfive} (int year)
+\item 
+int \hyperlink{easter_8c_a901cf336eebf807fcd28f1bbcf211ac0}{day} (int year)
+\item 
+char $\ast$ \hyperlink{easter_8c_aff6707f062eb6867185d4092677231fd}{month} (int year)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{easter_8c_ab8be717a2fb8538e343005978ef9a807}\label{easter_8c_ab8be717a2fb8538e343005978ef9a807}} 
+\index{easter.\+c@{easter.\+c}!a@{a}}
+\index{a@{a}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{a()}{a()}}
+{\footnotesize\ttfamily static int a (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 10 of file easter.\+c.
+
+
+
+References N\+I\+N\+E\+T\+E\+EN.
+
+
+
+Referenced by d(), and easter\+\_\+twentyfive().
+
+\mbox{\Hypertarget{easter_8c_abe4750233c5ba93314e53871633e04ab}\label{easter_8c_abe4750233c5ba93314e53871633e04ab}} 
+\index{easter.\+c@{easter.\+c}!b@{b}}
+\index{b@{b}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{b()}{b()}}
+{\footnotesize\ttfamily static int b (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 14 of file easter.\+c.
+
+
+
+References F\+O\+UR.
+
+
+
+Referenced by e().
+
+\mbox{\Hypertarget{easter_8c_a818880d9709e9aada9922fd03e933025}\label{easter_8c_a818880d9709e9aada9922fd03e933025}} 
+\index{easter.\+c@{easter.\+c}!c@{c}}
+\index{c@{c}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{c()}{c()}}
+{\footnotesize\ttfamily static int c (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 18 of file easter.\+c.
+
+
+
+References S\+E\+V\+EN.
+
+
+
+Referenced by e().
+
+\mbox{\Hypertarget{easter_8c_a4157466fb1c5470a5c55d05e00d1ff98}\label{easter_8c_a4157466fb1c5470a5c55d05e00d1ff98}} 
+\index{easter.\+c@{easter.\+c}!d@{d}}
+\index{d@{d}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{d()}{d()}}
+{\footnotesize\ttfamily static int d (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 38 of file easter.\+c.
+
+
+
+References a(), m(), N\+I\+N\+E\+T\+E\+EN, and T\+H\+I\+R\+TY.
+
+
+
+Referenced by day(), e(), easter\+\_\+nineteen(), easter\+\_\+twentyfive(), month(), and year\+\_\+min\+\_\+ten().
+
+\mbox{\Hypertarget{easter_8c_a901cf336eebf807fcd28f1bbcf211ac0}\label{easter_8c_a901cf336eebf807fcd28f1bbcf211ac0}} 
+\index{easter.\+c@{easter.\+c}!day@{day}}
+\index{day@{day}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{day()}{day()}}
+{\footnotesize\ttfamily int day (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+Calcola il giorno del mese in cui cade la Pasqua \begin{DoxyPrecond}{Precondition}
+l\textquotesingle{}anno deve essere compre tra il 1583 e il 2499 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em year} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 58 of file easter.\+c.
+
+
+
+References d(), e(), easter\+\_\+nineteen(), easter\+\_\+twentyfive(), is\+\_\+valid\+\_\+year(), N\+I\+NE, N\+I\+N\+E\+T\+E\+EN, T\+W\+E\+N\+T\+Y\+F\+I\+VE, T\+W\+E\+N\+T\+Y\+T\+WO, and year\+\_\+min\+\_\+ten().
+
+
+
+Referenced by is\+\_\+april\+\_\+easter(), print\+\_\+april\+\_\+easter(), and print\+\_\+march\+\_\+easter().
+
+\mbox{\Hypertarget{easter_8c_aa155af5393d59b409b7346ee13aa77c6}\label{easter_8c_aa155af5393d59b409b7346ee13aa77c6}} 
+\index{easter.\+c@{easter.\+c}!e@{e}}
+\index{e@{e}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{e()}{e()}}
+{\footnotesize\ttfamily static int e (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 42 of file easter.\+c.
+
+
+
+References b(), c(), d(), F\+O\+UR, n(), S\+E\+V\+EN, S\+IX, and T\+WO.
+
+
+
+Referenced by day(), easter\+\_\+nineteen(), easter\+\_\+twentyfive(), month(), and year\+\_\+min\+\_\+ten().
+
+\mbox{\Hypertarget{easter_8c_abbdc789636ae16180b84967212004a3f}\label{easter_8c_abbdc789636ae16180b84967212004a3f}} 
+\index{easter.\+c@{easter.\+c}!easter\+\_\+nineteen@{easter\+\_\+nineteen}}
+\index{easter\+\_\+nineteen@{easter\+\_\+nineteen}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{easter\+\_\+nineteen()}{easter\_nineteen()}}
+{\footnotesize\ttfamily static bool easter\+\_\+nineteen (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 50 of file easter.\+c.
+
+
+
+References d(), e(), N\+I\+NE, and T\+W\+E\+N\+T\+Y\+S\+IX.
+
+
+
+Referenced by day().
+
+\mbox{\Hypertarget{easter_8c_acd04e183806f7bee9082061c121563d4}\label{easter_8c_acd04e183806f7bee9082061c121563d4}} 
+\index{easter.\+c@{easter.\+c}!easter\+\_\+twentyfive@{easter\+\_\+twentyfive}}
+\index{easter\+\_\+twentyfive@{easter\+\_\+twentyfive}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{easter\+\_\+twentyfive()}{easter\_twentyfive()}}
+{\footnotesize\ttfamily static bool easter\+\_\+twentyfive (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 54 of file easter.\+c.
+
+
+
+References a(), d(), e(), N\+I\+NE, S\+IX, T\+EN, T\+W\+E\+N\+T\+Y\+E\+I\+G\+HT, and T\+W\+E\+N\+T\+Y\+S\+IX.
+
+
+
+Referenced by day().
+
+\mbox{\Hypertarget{easter_8c_a7ff1e16e86b066be180847e6cf2c025e}\label{easter_8c_a7ff1e16e86b066be180847e6cf2c025e}} 
+\index{easter.\+c@{easter.\+c}!m@{m}}
+\index{m@{m}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{m()}{m()}}
+{\footnotesize\ttfamily static int m (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 22 of file easter.\+c.
+
+
+
+References M\+I\+N\+\_\+\+Y\+E\+AR, O\+NE, T\+W\+E\+N\+T\+Y\+F\+I\+VE, T\+W\+E\+N\+T\+Y\+F\+O\+UR, T\+W\+E\+N\+T\+Y\+S\+IX, T\+W\+E\+N\+T\+Y\+T\+H\+R\+EE, T\+W\+E\+N\+T\+Y\+T\+WO, Y\+E\+A\+R\+\_\+A, Y\+E\+A\+R\+\_\+B, Y\+E\+A\+R\+\_\+C, Y\+E\+A\+R\+\_\+D, and Y\+E\+A\+R\+\_\+E.
+
+
+
+Referenced by d().
+
+\mbox{\Hypertarget{easter_8c_aff6707f062eb6867185d4092677231fd}\label{easter_8c_aff6707f062eb6867185d4092677231fd}} 
+\index{easter.\+c@{easter.\+c}!month@{month}}
+\index{month@{month}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{month()}{month()}}
+{\footnotesize\ttfamily char$\ast$ month (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+Calcola il mese in cui cade la Pasqua \begin{DoxyPrecond}{Precondition}
+l\textquotesingle{}anno deve essere compre tra il 1583 e il 2499 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em year} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 65 of file easter.\+c.
+
+
+
+References A\+P\+R\+IL, d(), e(), is\+\_\+valid\+\_\+year(), M\+A\+R\+CH, and T\+EN.
+
+
+
+Referenced by is\+\_\+april\+\_\+easter(), print\+\_\+april\+\_\+easter(), and print\+\_\+march\+\_\+easter().
+
+\mbox{\Hypertarget{easter_8c_aea5342be37614c7e120c52101794dbfe}\label{easter_8c_aea5342be37614c7e120c52101794dbfe}} 
+\index{easter.\+c@{easter.\+c}!n@{n}}
+\index{n@{n}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{n()}{n()}}
+{\footnotesize\ttfamily static int n (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 29 of file easter.\+c.
+
+
+
+References F\+I\+VE, F\+O\+UR, M\+A\+X\+\_\+\+Y\+E\+AR, M\+I\+N\+\_\+\+Y\+E\+AR, O\+NE, S\+IX, T\+H\+R\+EE, T\+WO, Y\+E\+A\+R\+\_\+A, Y\+E\+A\+R\+\_\+B, Y\+E\+A\+R\+\_\+C, Y\+E\+A\+R\+\_\+D, Y\+E\+A\+R\+\_\+F, Y\+E\+A\+R\+\_\+G, and Z\+E\+RO.
+
+
+
+Referenced by e().
+
+\mbox{\Hypertarget{easter_8c_a59da15861b040d71106ad8872e81193b}\label{easter_8c_a59da15861b040d71106ad8872e81193b}} 
+\index{easter.\+c@{easter.\+c}!year\+\_\+min\+\_\+ten@{year\+\_\+min\+\_\+ten}}
+\index{year\+\_\+min\+\_\+ten@{year\+\_\+min\+\_\+ten}!easter.\+c@{easter.\+c}}
+\subsubsection{\texorpdfstring{year\+\_\+min\+\_\+ten()}{year\_min\_ten()}}
+{\footnotesize\ttfamily static bool year\+\_\+min\+\_\+ten (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 46 of file easter.\+c.
+
+
+
+References d(), e(), and T\+EN.
+
+
+
+Referenced by day().
+
