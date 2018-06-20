@@ -8,31 +8,31 @@
 #include "print_result/easter/easter.h"
 
 static int a(int year){
-	return year%NINETEEN;
+	return year % NINETEEN;
 }
 
 static int b(int year){
-	return year%FOUR;
+	return year % FOUR;
 }
 
 static int c(int year){
-	return year%SEVEN;
+	return year % SEVEN;
 }
 
 static int m(int year){
-	return year>=MIN_YEAR&&year<=YEAR_A?TWENTYTWO:
-			year>=YEAR_A+ONE&&year<=YEAR_B?TWENTYTHREE:
-					year>=YEAR_B+ONE&&year<=YEAR_C?TWENTYFOUR:
-							year>=YEAR_D&&year<=YEAR_E?TWENTYSIX:TWENTYFIVE;
+	return year >= MIN_YEAR && year <= YEAR_A ? TWENTYTWO:
+			year >= YEAR_A + ONE && year <=YEAR_B ? TWENTYTHREE:
+					year >= YEAR_B+ONE && year <= YEAR_C ? TWENTYFOUR:
+							year >= YEAR_D && year <= YEAR_E ? TWENTYSIX : TWENTYFIVE;
 }
 
 static int n(int year){
-	return year>=YEAR_C+ONE&&year<=YEAR_D-ONE?ZERO:
-			year>=YEAR_D&&year<=MAX_YEAR?ONE:
-					year>=MIN_YEAR&&year<=YEAR_A?TWO:
-							year>=YEAR_A+ONE&&year<=YEAR_F?THREE:
-									year>=YEAR_F+ONE&&year<=YEAR_B?FOUR:
-											year>=YEAR_B&&year<=YEAR_G?FIVE:SIX;
+	return year >= YEAR_C + ONE && year <= YEAR_D-ONE ? ZERO:
+		   year >= YEAR_D && year <= MAX_YEAR ? ONE:
+		   year >= MIN_YEAR && year <= YEAR_A ? TWO :
+		   year >= YEAR_A + ONE && year <= YEAR_F ? THREE :
+		   year >= YEAR_F + ONE && year <= YEAR_B ? FOUR :
+		   year >= YEAR_B && year <= YEAR_G ? FIVE : SIX;
 }
 
 static int d(int year){
