@@ -44,22 +44,23 @@ static int e(int year){
 }
 
 static bool year_min_ten(int year){
-	return (d(year)+e(year))<TEN;
+	return (d(year)+e(year)) < TEN;
 }
 
 static bool easter_nineteen(int year){
-	return ((d(year)+e(year))-NINE)==TWENTYSIX;
+	return ((d(year)+e(year))-NINE) == TWENTYSIX;
 }
 
 static bool easter_twentyfive(int year){
-	return d(year)+e(year)-NINE==TWENTYSIX&&a(year)>TEN&&d(year)==TWENTYEIGHT&&e(year)==SIX;
+	return d(year)+e(year)-NINE == TWENTYSIX&&a(year) > TEN &&
+			d(year)==TWENTYEIGHT&&e(year) == SIX;
 }
 
 int day(int year){
 	assert((is_valid_year(year)));
-	return year_min_ten(year)?(d(year)+e(year))+TWENTYTWO:
-		   easter_nineteen(year)?NINETEEN:
-	       easter_twentyfive(year)?TWENTYFIVE:(d(year)+e(year))-NINE;
+	return year_min_ten(year) ? (d(year)+e(year))+TWENTYTWO :
+		   easter_nineteen(year) ? NINETEEN :
+	       easter_twentyfive(year) ? TWENTYFIVE:(d(year)+e(year))-NINE;
 }
 
 char* month(int year){
