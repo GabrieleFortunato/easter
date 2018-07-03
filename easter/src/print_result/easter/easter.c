@@ -21,9 +21,9 @@ static int c(int year){
 
 static int m(int year){
 	return year >= MIN_YEAR && year <= YEAR_A ? TWENTYTWO:
-			year >= YEAR_A + ONE && year <=YEAR_B ? TWENTYTHREE:
-					year >= YEAR_B+ONE && year <= YEAR_C ? TWENTYFOUR:
-							year >= YEAR_D && year <= YEAR_E ? TWENTYSIX : TWENTYFIVE;
+		   year >= YEAR_A + ONE && year <=YEAR_B ? TWENTYTHREE:
+		   year >= YEAR_B+ONE && year <= YEAR_C ? TWENTYFOUR:
+		   year >= YEAR_D && year <= YEAR_E ? TWENTYSIX : TWENTYFIVE;
 }
 
 static int n(int year){
@@ -65,5 +65,5 @@ int day(int year){
 
 char* month(int year){
 	assert((is_valid_year(year)));
-	return (d(year)+e(year))<TEN?MARCH:APRIL;
+	return (d(year)+e(year)) < TEN ? MARCH : APRIL;
 }
