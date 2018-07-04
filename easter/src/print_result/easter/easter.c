@@ -43,7 +43,7 @@ static int e(int year){
 	return (TWO*b(year)+FOUR*c(year)+SIX*d(year)+n(year))%SEVEN;
 }
 
-static bool year_min_ten(int year){
+static bool year_minus_ten(int year){
 	return (d(year)+e(year)) < TEN;
 }
 
@@ -58,7 +58,7 @@ static bool easter_twentyfive(int year){
 
 int day(int year){
 	assert((is_valid_year(year)));
-	return year_min_ten(year) ? (d(year)+e(year))+TWENTYTWO :
+	return year_minus_ten(year) ? (d(year)+e(year))+TWENTYTWO :
 		   easter_nineteen(year) ? NINETEEN :
 	       easter_twentyfive(year) ? TWENTYFIVE:(d(year)+e(year))-NINE;
 }
