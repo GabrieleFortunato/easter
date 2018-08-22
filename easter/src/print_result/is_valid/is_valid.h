@@ -10,9 +10,6 @@
 
 #include <stdbool.h>
 
-#define MIN_YEAR      1583
-#define MAX_YEAR      2499
-
 /**
  * Verifica che l'anno di cui calcolare la Pasqua
  * sia compreso tra il 1583 e il 2499

@@ -9,8 +9,5 @@
 
 void print_access(FILE* file){
 	time_t ora = time(NULL);
-	fputs(
-			(char*)asctime(localtime(&ora)),
-			file
-	);
+	fputs((char*)asctime(localtime(&ora)),file);
 }

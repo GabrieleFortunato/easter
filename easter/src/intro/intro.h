@@ -11,7 +11,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define CLS           "CLS"
 #define EMPTY_STRING  ""
 #define BAR_LINE      "================================="
 #define PRESENTATION  "PROGRAMMA DI CALCOLO DELLA PASQUA"

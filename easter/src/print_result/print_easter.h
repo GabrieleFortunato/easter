@@ -15,11 +15,6 @@
 #include <stdbool.h>
 #include <string.h>
 
-#define DATE             "Data della Santa Pasqua: %d %s"
-#define BAR    			 "\n==================================\n"
-#define BAR1             "\n=================================\n"
-#define NOT_VALID_YEAR   "\nL'anno inserito non e' valido"
-
 /**
  * Stampa la data della Pasqua
  * @param year

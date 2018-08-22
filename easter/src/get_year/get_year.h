@@ -9,13 +9,6 @@
 #define GET_YEAR_GET_YEAR_H_
 
 #include "stdio.h"
-#include "stdbool.h"
-
-#define ZERO 		 0
-#define MIN_YEAR     1583
-#define MAX_YEAR     2499
-#define STRING       "Inserire l'anno di cui calcolare la Pasqua (compreso tra il 1583 e il 2499)>"
-#define SPECIFIC_INT "%d"
 
 /**
  * Inserimento da tastiera dell'anno di cui calcolare la Pasqua

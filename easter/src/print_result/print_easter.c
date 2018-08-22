@@ -7,16 +7,27 @@
 
 #include "print_result/print_easter.h"
 
+static const int TEN = 10;
+static const int ZERO = 0;
+static const char* INVALID_YEAR = "\nL'anno inserito non e' valido";
+static const char* APRIL = "aprile";
+static const char* PRINT_EASTER =
+		"\n==================================\n"
+		"Data della Santa Pasqua: %d %s"
+		"\n==================================\n";
+
 static void print_april_easter(int year){
-	printf(BAR DATE BAR,day(year),month(year));
+	printf(PRINT_EASTER, day(year), month(year));
 }
 
 static void print_march_easter(int year){
-	printf(BAR1 DATE BAR1,day(year),month(year));
+	printf(
+			PRINT_EASTER
+			,day(year),month(year));
 }
 
 static bool is_april_easter(int year){
-	return day(year)>TEN&&strcmp(month(year),APRIL)==ZERO;
+	return day(year) > TEN && strcmp(month(year), APRIL) == ZERO;
 }
 
 static void print_valid_data(int year){
@@ -24,7 +35,7 @@ static void print_valid_data(int year){
 }
 
 static void print_not_valid_data(){
-	printf(NOT_VALID_YEAR);
+	printf(INVALID_YEAR);
 }
 
 void print_easter(int year){
