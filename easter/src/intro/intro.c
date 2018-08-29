@@ -7,19 +7,15 @@
 
 #include "intro.h"
 
-static const char* CURE = "a cura di Gabriele Fortunato";
-static const char* PRES = "PROGRAMMA DI CALCOLO DELLA PASQUA";
-static const char* BAR = "=================================";
-static const char* EMPTY = "";
 static const char* CLS = "CLS";
+static const char* INTRO =
+		"\n"
+		"=================================\n"
+		"PROGRAMMA DI CALCOLO DELLA PASQUA\n"
+		"=================================\n"
+		"a cura di Gabriele Fortunato\n\n";
 
 void intro(void){
 	system(CLS);
-	puts(EMPTY);
-	puts(BAR);
-	puts(PRES);
-	puts(BAR);
-	puts(CURE);
-	puts(EMPTY);
-	puts(EMPTY);
+	puts(INTRO);
 }

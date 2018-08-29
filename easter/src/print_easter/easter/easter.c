@@ -5,7 +5,7 @@
  *      Author: gabriele
  */
 
-#include "print_result/easter/easter.h"
+#include <print_easter/easter/easter.h>
 
 static const int ZERO = 0;
 static const int ONE = 1;

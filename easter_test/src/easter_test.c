@@ -8,8 +8,8 @@
  ============================================================================
  */
 #include <CUnit/basic.h>
-#include "print_result/easter/easter.h"
-#include "print_result/is_valid/is_valid.h"
+#include <print_easter/easter/easter.h>
+#include <print_easter/is_valid/is_valid.h>
 
 int init_suite_default(){
 	return 0;

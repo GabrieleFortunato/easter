@@ -11,10 +11,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define EMPTY_STRING  ""
-#define BAR_LINE      "================================="
-#define PRESENTATION  "PROGRAMMA DI CALCOLO DELLA PASQUA"
-#define AUTHOR        "a cura di Gabriele Fortunato"
 
 /**
  * Apertura e presentazione del programma

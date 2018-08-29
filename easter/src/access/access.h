@@ -14,12 +14,6 @@
 #include <time.h>
 #include "intro/intro.h"
 
-#define ZERO        0
-#define ONE         1
-#define FILE_NAME   "accessi.txt"
-#define ACCESS      "%s"
-#define FILE_MODE   "a"
-
 /**
  * Stampa su file la data e l'ora dell'accesso al programma
  */

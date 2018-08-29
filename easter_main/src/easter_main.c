@@ -1,22 +1,25 @@
 /*
  ============================================================================
  Name        : easter_main.c
- Author      : 
+ Author      : Gabriele Fortunato
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
  ============================================================================
  */
 
-#include <print_result/print_easter.h>
+#include <print_easter/print_easter.h>
 #include "intro/intro.h"
 #include "get_year/get_year.h"
 #include "repeat/repeat.h"
 #include "close/close.h"
 #include "access/access.h"
 
+static const char* WRITE_ON_FILE = "w";
+static const char* ACCESS_FILE_NAME = "accessi.txt";
+
 void access(){
-	FILE* file = fopen(FILE_NAME,FILE_MODE);
+	FILE* file = fopen(ACCESS_FILE_NAME, WRITE_ON_FILE);
 	print_access(file);
 	fclose(file);
 }

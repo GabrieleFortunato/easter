@@ -5,12 +5,11 @@
  *      Author: gabriele
  */
 
-#ifndef PRINT_RESULT_EASTER_EASTER_H_
-#define PRINT_RESULT_EASTER_EASTER_H_
+#ifndef PRINT_EASTER_EASTER_EASTER_H_
+#define PRINT_EASTER_EASTER_EASTER_H_
 
 #include <assert.h>
-#include <stdbool.h>
-#include "print_result/is_valid/is_valid.h"
+#include "print_easter/is_valid/is_valid.h"
 
 /**
  * Calcola il giorno del mese in cui cade la Pasqua
@@ -28,4 +27,4 @@ int day(int year);
  */
 char* month(int year);
 
-#endif /* PRINT_RESULT_EASTER_EASTER_H_ */
+#endif /* PRINT_EASTER_EASTER_EASTER_H_ */
