@@ -29,11 +29,11 @@ void caluculate_easter(){
 		intro();
 		print_easter(get_year());
 	} while(repeat());
-	close();
 }
 
 int main(void) {
 	access();
 	caluculate_easter();
+	close();
 	return EXIT_SUCCESS;
 }
