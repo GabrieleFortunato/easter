@@ -1,31 +1,83 @@
-\hypertarget{get__year_8c}{}\section{src/get\+\_\+year/get\+\_\+year.c File Reference}
-\label{get__year_8c}\index{src/get\+\_\+year/get\+\_\+year.\+c@{src/get\+\_\+year/get\+\_\+year.\+c}}
-{\ttfamily \#include \char`\"{}get\+\_\+year.\+h\char`\"{}}\newline
+\hypertarget{get__year_8c}{\section{src/get\-\_\-year/get\-\_\-year.c File Reference}
+\label{get__year_8c}\index{src/get\-\_\-year/get\-\_\-year.\-c@{src/get\-\_\-year/get\-\_\-year.\-c}}
+}
+{\ttfamily \#include \char`\"{}get\-\_\-year.\-h\char`\"{}}\\*
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{get__year_8c_a1eeb5dfb948a4386a4c6283c7a9ebcf8}{get\+\_\+year} (void)
+int \hyperlink{get__year_8c_a1eeb5dfb948a4386a4c6283c7a9ebcf8}{get\-\_\-year} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{get__year_8c_ac817e632cac63218335454d0ebe89efe}{S\-P\-E\-C\-\_\-\-I\-N\-T} = \char`\"{}\%d\char`\"{}
+\item 
+static const char $\ast$ \hyperlink{get__year_8c_a7ee12cbcd0e4aa8316c56753e25583c6}{I\-N\-S\-E\-R\-T\-\_\-\-Y\-E\-A\-R}
+\item 
+static const int \hyperlink{get__year_8c_acdb9580f8c1b2955aa58958261a6c582}{Z\-E\-R\-O} = 0
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{get__year_8c_a1eeb5dfb948a4386a4c6283c7a9ebcf8}\label{get__year_8c_a1eeb5dfb948a4386a4c6283c7a9ebcf8}} 
-\index{get\+\_\+year.\+c@{get\+\_\+year.\+c}!get\+\_\+year@{get\+\_\+year}}
-\index{get\+\_\+year@{get\+\_\+year}!get\+\_\+year.\+c@{get\+\_\+year.\+c}}
-\subsubsection{\texorpdfstring{get\+\_\+year()}{get\_year()}}
-{\footnotesize\ttfamily int get\+\_\+year (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
-
-Inserimento da tastiera dell\textquotesingle{}anno di cui calcolare la Pasqua \begin{DoxyPostcond}{Postcondition}
-l\textquotesingle{}anno deve essere compreso tra il 1584 e il 2499 
+\hypertarget{get__year_8c_a1eeb5dfb948a4386a4c6283c7a9ebcf8}{\index{get\-\_\-year.\-c@{get\-\_\-year.\-c}!get\-\_\-year@{get\-\_\-year}}
+\index{get\-\_\-year@{get\-\_\-year}!get_year.c@{get\-\_\-year.\-c}}
+\subsubsection[{get\-\_\-year}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-year (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{get__year_8c_a1eeb5dfb948a4386a4c6283c7a9ebcf8}
+Inserimento da tastiera dell'anno di cui calcolare la Pasqua \begin{DoxyPostcond}{Postcondition}
+l'anno deve essere compreso tra il 1584 e il 2499 
 \end{DoxyPostcond}
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
 
 
-Definition at line 10 of file get\+\_\+year.\+c.
+Definition at line 15 of file get\-\_\-year.\-c.
 
 
 
-References S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+I\+NT, S\+T\+R\+I\+NG, and Z\+E\+RO.
+References I\-N\-S\-E\-R\-T\-\_\-\-Y\-E\-A\-R, S\-P\-E\-C\-\_\-\-I\-N\-T, and Z\-E\-R\-O.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{get__year_8c_a7ee12cbcd0e4aa8316c56753e25583c6}{\index{get\-\_\-year.\-c@{get\-\_\-year.\-c}!I\-N\-S\-E\-R\-T\-\_\-\-Y\-E\-A\-R@{I\-N\-S\-E\-R\-T\-\_\-\-Y\-E\-A\-R}}
+\index{I\-N\-S\-E\-R\-T\-\_\-\-Y\-E\-A\-R@{I\-N\-S\-E\-R\-T\-\_\-\-Y\-E\-A\-R}!get_year.c@{get\-\_\-year.\-c}}
+\subsubsection[{I\-N\-S\-E\-R\-T\-\_\-\-Y\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ I\-N\-S\-E\-R\-T\-\_\-\-Y\-E\-A\-R\hspace{0.3cm}{\ttfamily [static]}}}\label{get__year_8c_a7ee12cbcd0e4aa8316c56753e25583c6}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+        \textcolor{stringliteral}{"Inserire l'anno di cui calcolare la Pasqua (compreso tra il 1583 e il 2499)>"}
+\end{DoxyCode}
+
+
+Definition at line 11 of file get\-\_\-year.\-c.
+
+
+
+Referenced by get\-\_\-year().
+
+\hypertarget{get__year_8c_ac817e632cac63218335454d0ebe89efe}{\index{get\-\_\-year.\-c@{get\-\_\-year.\-c}!S\-P\-E\-C\-\_\-\-I\-N\-T@{S\-P\-E\-C\-\_\-\-I\-N\-T}}
+\index{S\-P\-E\-C\-\_\-\-I\-N\-T@{S\-P\-E\-C\-\_\-\-I\-N\-T}!get_year.c@{get\-\_\-year.\-c}}
+\subsubsection[{S\-P\-E\-C\-\_\-\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ S\-P\-E\-C\-\_\-\-I\-N\-T = \char`\"{}\%d\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{get__year_8c_ac817e632cac63218335454d0ebe89efe}
+
+
+Definition at line 10 of file get\-\_\-year.\-c.
+
+
+
+Referenced by get\-\_\-year().
+
+\hypertarget{get__year_8c_acdb9580f8c1b2955aa58958261a6c582}{\index{get\-\_\-year.\-c@{get\-\_\-year.\-c}!Z\-E\-R\-O@{Z\-E\-R\-O}}
+\index{Z\-E\-R\-O@{Z\-E\-R\-O}!get_year.c@{get\-\_\-year.\-c}}
+\subsubsection[{Z\-E\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}const int Z\-E\-R\-O = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{get__year_8c_acdb9580f8c1b2955aa58958261a6c582}
+
+
+Definition at line 13 of file get\-\_\-year.\-c.
+
+
+
+Referenced by get\-\_\-year().
 

@@ -17,7 +17,6 @@
 /**
  * Stampa su file la data e l'ora dell'accesso al programma
  */
-void print_access(FILE* file);
-
+void print_access_on_file(FILE* file);
 
 #endif /* SRC_ACCESS_ACCESS_H_ */

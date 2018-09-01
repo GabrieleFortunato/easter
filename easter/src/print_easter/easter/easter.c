@@ -86,9 +86,9 @@ static bool easter_twentyfive(int year){
 
 int day(int year){
 	assert((is_valid_year(year)));
-	return year_minus_ten(year) ? (d(year)+e(year))+TWENTYTWO :
+	return year_minus_ten(year) ? (d(year) + e(year)) + TWENTYTWO :
 		   easter_nineteen(year) ? NINETEEN :
-	       easter_twentyfive(year) ? TWENTYFIVE:(d(year)+e(year))-NINE;
+	       easter_twentyfive(year) ? TWENTYFIVE:(d(year) + e(year)) - NINE;
 }
 
 char* month(int year){

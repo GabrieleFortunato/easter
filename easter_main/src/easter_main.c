@@ -20,11 +20,11 @@ static const char* ACCESS_FILE_NAME = "accessi.txt";
 
 void access(){
 	FILE* file = fopen(ACCESS_FILE_NAME, WRITE_ON_FILE);
-	print_access(file);
+	print_access_on_file(file);
 	fclose(file);
 }
 
-void easter(){
+void caluculate_easter(){
 	do{
 		intro();
 		print_easter(get_year());
@@ -34,6 +34,6 @@ void easter(){
 
 int main(void) {
 	access();
-	easter();
+	caluculate_easter();
 	return EXIT_SUCCESS;
 }

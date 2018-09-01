@@ -7,7 +7,7 @@
 
 #include "access.h"
 
-void print_access(FILE* file){
+void print_access_on_file(FILE* file){
 	time_t ora = time(NULL);
 	fputs((char*)asctime(localtime(&ora)),file);
 }
