@@ -82,7 +82,7 @@ static bool easter_nineteen(int year){
 }
 
 static bool easter_twentyfive(int year){
-	return (d(year) + e(year)-NINE == TWENTYSIX) && (a(year) > TEN) &&
+	return ((d(year) + e(year) - NINE) == TWENTYSIX) && (a(year) > TEN) &&
 			(d(year) == TWENTYEIGHT) && (e(year) == SIX);
 }
 
