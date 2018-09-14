@@ -1,4 +1,4 @@
-/*
+const/*
  * easter.h
  *
  *  Created on: 03 set 2017
@@ -25,6 +25,6 @@ int day(int year);
  * @param year
  * @return
  */
-char* month(int year);
+const char* month(int year);
 
 #endif /* PRINT_EASTER_EASTER_EASTER_H_ */

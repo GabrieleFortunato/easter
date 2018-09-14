@@ -5,7 +5,7 @@
  *      Author: gabriele
  */
 
-#include <print_easter/print_easter.h>
+#include "print_easter/print_easter.h"
 
 static const int TEN = 10;
 static const int ZERO = 0;
@@ -26,7 +26,7 @@ static void print_april_easter(int year){
 }
 
 static void print_march_easter(int year){
-	printf(PRINT_MARCH_EASTER,day(year),month(year));
+	printf(PRINT_MARCH_EASTER,day(year), month(year));
 }
 
 static bool is_april_easter(int year){
@@ -44,4 +44,3 @@ static void print_not_valid_data(){
 void print_easter(int year){
 	is_valid_year(year)?print_valid_data(year):print_not_valid_data();
 }
-
