@@ -5,8 +5,8 @@
  *      Author: gabriele
  */
 
-#ifndef PRINT_EASTER_IS_VALID_IS_VALID_H_
-#define PRINT_EASTER_IS_VALID_IS_VALID_H_
+#ifndef PRINT_RESULT_IS_VALID_IS_VALID_H_
+#define PRINT_RESULT_IS_VALID_IS_VALID_H_
 
 #include <stdbool.h>
 
@@ -18,4 +18,4 @@
  */
 bool is_valid_year(int year);
 
-#endif /* PRINT_EASTER_IS_VALID_IS_VALID_H_ */
+#endif /* PRINT_RESULT_IS_VALID_IS_VALID_H_ */

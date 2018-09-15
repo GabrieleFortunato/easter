@@ -12,6 +12,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#define ZERO      		 0
+#define ONE	      		 1
+#define TWO       		 2
+#define REPEAT_STRING    "\n\nCalcolare la data di un'altra Pasqua?\n(1=si,2=no) "
+
 /**
  * Verifica l'intenzione dell'utente di calcolare un altro codice fiscale
  * @return

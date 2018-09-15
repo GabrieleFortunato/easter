@@ -1,15 +1,18 @@
-const/*
+/*
  * easter.h
  *
  *  Created on: 03 set 2017
  *      Author: gabriele
  */
 
-#ifndef PRINT_EASTER_EASTER_EASTER_H_
-#define PRINT_EASTER_EASTER_EASTER_H_
+#ifndef PRINT_RESULT_EASTER_EASTER_H_
+#define PRINT_RESULT_EASTER_EASTER_H_
 
 #include <assert.h>
-#include "print_easter/is_valid/is_valid.h"
+#include <stdbool.h>
+
+#include "../../print_easter/is_valid/is_valid.h"
+
 
 /**
  * Calcola il giorno del mese in cui cade la Pasqua
@@ -27,4 +30,4 @@ int day(int year);
  */
 const char* month(int year);
 
-#endif /* PRINT_EASTER_EASTER_EASTER_H_ */
+#endif /* PRINT_RESULT_EASTER_EASTER_H_ */

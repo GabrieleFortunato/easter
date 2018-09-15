@@ -11,6 +11,9 @@
 #include <print_easter/easter/easter.h>
 #include <print_easter/is_valid/is_valid.h>
 
+static const char* april = "aprile";
+static const char* march = "marzo";
+
 int init_suite_default(){
 	return 0;
 }
@@ -41,14 +44,14 @@ void test_day(){
 }
 
 void test_month(){
-	CU_ASSERT_STRING_EQUAL(month(1967),"marzo");
-	CU_ASSERT_STRING_EQUAL(month(1981),"aprile");
-	CU_ASSERT_STRING_EQUAL(month(1997),"marzo");
-	CU_ASSERT_STRING_EQUAL(month(2000),"aprile");
-	CU_ASSERT_STRING_EQUAL(month(2002),"marzo");
-	CU_ASSERT_STRING_EQUAL(month(2008),"marzo");
-	CU_ASSERT_STRING_EQUAL(month(2000),"aprile");
-	CU_ASSERT_STRING_EQUAL(month(2011),"aprile");
+	CU_ASSERT_STRING_EQUAL(month(1967),march);
+	CU_ASSERT_STRING_EQUAL(month(1981),april);
+	CU_ASSERT_STRING_EQUAL(month(1997),march);
+	CU_ASSERT_STRING_EQUAL(month(2000),april);
+	CU_ASSERT_STRING_EQUAL(month(2002),march);
+	CU_ASSERT_STRING_EQUAL(month(2008),march);
+	CU_ASSERT_STRING_EQUAL(month(2000),april);
+	CU_ASSERT_STRING_EQUAL(month(2011),april);
 	CU_ASSERT_STRING_EQUAL(month(2011),month(2010));
 	CU_ASSERT_STRING_EQUAL(month(2011),month(2014));
 	CU_ASSERT_STRING_EQUAL(month(2011),month(2018));
@@ -58,9 +61,9 @@ void test_month(){
 
 int main(void) {
 	CU_initialize_registry();
-	CU_pSuite pSuite_A = CU_add_suite("IS VALID YEAR",init_suite_default,clear_suite_default);
+	CU_pSuite pSuite_A = CU_add_suite("SUITE IS VALID",init_suite_default,clear_suite_default);
 	CU_add_test(pSuite_A,"test of is_valid_year()",test_is_valid_year);
-	CU_pSuite pSuite_B = CU_add_suite("DATE OF EASTER",init_suite_default,clear_suite_default);
+	CU_pSuite pSuite_B = CU_add_suite("SUITE DATE",init_suite_default,clear_suite_default);
 	CU_add_test(pSuite_B,"test of day()",test_day);
 	CU_add_test(pSuite_B,"test of month()",test_month);
 	CU_basic_set_mode(CU_BRM_VERBOSE);

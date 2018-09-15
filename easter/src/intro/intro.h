@@ -11,7 +11,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
  * Apertura e presentazione del programma
  */

@@ -8,14 +8,11 @@
 #include "intro.h"
 
 static const char* CLS = "CLS";
-static const char* INTRO =
-		"\n"
-		"=================================\n"
-		"PROGRAMMA DI CALCOLO DELLA PASQUA\n"
-		"=================================\n"
-		"a cura di Gabriele Fortunato\n\n";
 
 void intro(void){
 	system(CLS);
-	puts(INTRO);
+	printf("\n================================="
+			"\nPROGRAMMA DI CALCOLO DELLA PASQUA"
+			"\n================================="
+			"\na cura di Gabriele Fortunato\n\n\n");
 }

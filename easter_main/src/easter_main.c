@@ -8,32 +8,33 @@
  ============================================================================
  */
 
-#include <print_easter/print_easter.h>
-#include "intro/intro.h"
-#include "get_year/get_year.h"
-#include "repeat/repeat.h"
-#include "close/close.h"
 #include "access/access.h"
+#include "close/close.h"
+#include "get_year/get_year.h"
+#include "intro/intro.h"
+#include "print_easter/print_easter.h"
+#include "repeat/repeat.h"
 
 static const char* WRITE_ON_FILE = "w";
 static const char* ACCESS_FILE_NAME = "accessi.txt";
 
-void access(){
-	FILE* file = fopen(ACCESS_FILE_NAME, WRITE_ON_FILE);
-	print_access_on_file(file);
-	fclose(file);
+void print_access_on_file(){
+	FILE* access = fopen(ACCESS_FILE_NAME, WRITE_ON_FILE);
+	print_access(access);
+	fclose(access);
 }
 
-void caluculate_easter(){
+void calculate_easter(){
 	do{
 		intro();
-		print_easter(get_year());
+		int year = get_year();
+		print_easter(year);
 	} while(repeat());
 }
 
 int main(void) {
-	access();
-	caluculate_easter();
+	print_access_on_file();
+	calculate_easter();
 	close();
 	return EXIT_SUCCESS;
 }
