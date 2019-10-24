@@ -16,7 +16,7 @@
 #include "repeat/repeat.h"
 
 static const char* WRITE_ON_FILE = "w";
-static const char* ACCESS_FILE_NAME = "accessi.txt";
+static const char* ACCESS_FILE_NAME = "accessi al programma bmi.txt";
 
 void print_access_on_file(){
 	FILE* access = fopen(ACCESS_FILE_NAME, WRITE_ON_FILE);

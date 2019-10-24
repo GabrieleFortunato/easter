@@ -7,15 +7,17 @@
 
 #include "repeat.h"
 
+static const char* SPEC_INT = "%d";
+
 static int get_repeat(void){
-	int repeat=ZERO;
+	int repeat = ZERO;
 	do{
 	printf(REPEAT_STRING);
-	scanf("%d",&repeat);
-	} while((repeat!=ONE)&&(repeat!=TWO));
+		scanf(SPEC_INT, &repeat);
+	} while((repeat != ONE) && (repeat != TWO));
 	return repeat;
 }
 
 bool repeat(void){
-	return get_repeat()==ONE;
+	return get_repeat() == ONE;
 }

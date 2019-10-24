@@ -1,114 +1,33 @@
-\hypertarget{get__year_8h}{}\section{src/get\+\_\+year/get\+\_\+year.h File Reference}
-\label{get__year_8h}\index{src/get\+\_\+year/get\+\_\+year.\+h@{src/get\+\_\+year/get\+\_\+year.\+h}}
-{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}stdbool.\+h\char`\"{}}\newline
-\subsection*{Macros}
-\begin{DoxyCompactItemize}
-\item 
-\#define \hyperlink{get__year_8h_ac328e551bde3d39b6d7b8cc9e048d941}{Z\+E\+RO}~0
-\item 
-\#define \hyperlink{get__year_8h_a66979cc5bd82220ee4c973b4bcb36f10}{M\+I\+N\+\_\+\+Y\+E\+AR}~1583
-\item 
-\#define \hyperlink{get__year_8h_a59bcbb5f6896e44dfd79fa63508cfec3}{M\+A\+X\+\_\+\+Y\+E\+AR}~2499
-\item 
-\#define \hyperlink{get__year_8h_a0f4d394a3ab4e09bff60f714c66dc5ee}{S\+T\+R\+I\+NG}~\char`\"{}Inserire l\textquotesingle{}anno di cui calcolare la Pasqua (compreso tra il 1583 \hyperlink{easter_8c_aa155af5393d59b409b7346ee13aa77c6}{e} il 2499)$>$\char`\"{}
-\item 
-\#define \hyperlink{get__year_8h_a5a009b0fb19f08b51dedd67681f41dff}{S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+I\+NT}~\char`\"{}\%d\char`\"{}
-\end{DoxyCompactItemize}
+\hypertarget{get__year_8h}{\section{src/get\-\_\-year/get\-\_\-year.h File Reference}
+\label{get__year_8h}\index{src/get\-\_\-year/get\-\_\-year.\-h@{src/get\-\_\-year/get\-\_\-year.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{get__year_8h_a1eeb5dfb948a4386a4c6283c7a9ebcf8}{get\+\_\+year} (void)
+int \hyperlink{get__year_8h_a1eeb5dfb948a4386a4c6283c7a9ebcf8}{get\-\_\-year} (void)
 \end{DoxyCompactItemize}
 
 
-\subsection{Macro Definition Documentation}
-\mbox{\Hypertarget{get__year_8h_a59bcbb5f6896e44dfd79fa63508cfec3}\label{get__year_8h_a59bcbb5f6896e44dfd79fa63508cfec3}} 
-\index{get\+\_\+year.\+h@{get\+\_\+year.\+h}!M\+A\+X\+\_\+\+Y\+E\+AR@{M\+A\+X\+\_\+\+Y\+E\+AR}}
-\index{M\+A\+X\+\_\+\+Y\+E\+AR@{M\+A\+X\+\_\+\+Y\+E\+AR}!get\+\_\+year.\+h@{get\+\_\+year.\+h}}
-\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+Y\+E\+AR}{MAX\_YEAR}}
-{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+Y\+E\+AR~2499}
-
-
-
-Definition at line 16 of file get\+\_\+year.\+h.
-
-
-
-Referenced by is\+\_\+valid\+\_\+year(), and n().
-
-\mbox{\Hypertarget{get__year_8h_a66979cc5bd82220ee4c973b4bcb36f10}\label{get__year_8h_a66979cc5bd82220ee4c973b4bcb36f10}} 
-\index{get\+\_\+year.\+h@{get\+\_\+year.\+h}!M\+I\+N\+\_\+\+Y\+E\+AR@{M\+I\+N\+\_\+\+Y\+E\+AR}}
-\index{M\+I\+N\+\_\+\+Y\+E\+AR@{M\+I\+N\+\_\+\+Y\+E\+AR}!get\+\_\+year.\+h@{get\+\_\+year.\+h}}
-\subsubsection{\texorpdfstring{M\+I\+N\+\_\+\+Y\+E\+AR}{MIN\_YEAR}}
-{\footnotesize\ttfamily \#define M\+I\+N\+\_\+\+Y\+E\+AR~1583}
-
-
-
-Definition at line 15 of file get\+\_\+year.\+h.
-
-
-
-Referenced by is\+\_\+valid\+\_\+year(), m(), and n().
-
-\mbox{\Hypertarget{get__year_8h_a5a009b0fb19f08b51dedd67681f41dff}\label{get__year_8h_a5a009b0fb19f08b51dedd67681f41dff}} 
-\index{get\+\_\+year.\+h@{get\+\_\+year.\+h}!S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+I\+NT@{S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+I\+NT}}
-\index{S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+I\+NT@{S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+I\+NT}!get\+\_\+year.\+h@{get\+\_\+year.\+h}}
-\subsubsection{\texorpdfstring{S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+I\+NT}{SPECIFIC\_INT}}
-{\footnotesize\ttfamily \#define S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+I\+NT~\char`\"{}\%d\char`\"{}}
-
-
-
-Definition at line 18 of file get\+\_\+year.\+h.
-
-
-
-Referenced by get\+\_\+year().
-
-\mbox{\Hypertarget{get__year_8h_a0f4d394a3ab4e09bff60f714c66dc5ee}\label{get__year_8h_a0f4d394a3ab4e09bff60f714c66dc5ee}} 
-\index{get\+\_\+year.\+h@{get\+\_\+year.\+h}!S\+T\+R\+I\+NG@{S\+T\+R\+I\+NG}}
-\index{S\+T\+R\+I\+NG@{S\+T\+R\+I\+NG}!get\+\_\+year.\+h@{get\+\_\+year.\+h}}
-\subsubsection{\texorpdfstring{S\+T\+R\+I\+NG}{STRING}}
-{\footnotesize\ttfamily \#define S\+T\+R\+I\+NG~\char`\"{}Inserire l\textquotesingle{}anno di cui calcolare la Pasqua (compreso tra il 1583 \hyperlink{easter_8c_aa155af5393d59b409b7346ee13aa77c6}{e} il 2499)$>$\char`\"{}}
-
-
-
-Definition at line 17 of file get\+\_\+year.\+h.
-
-
-
-Referenced by get\+\_\+year().
-
-\mbox{\Hypertarget{get__year_8h_ac328e551bde3d39b6d7b8cc9e048d941}\label{get__year_8h_ac328e551bde3d39b6d7b8cc9e048d941}} 
-\index{get\+\_\+year.\+h@{get\+\_\+year.\+h}!Z\+E\+RO@{Z\+E\+RO}}
-\index{Z\+E\+RO@{Z\+E\+RO}!get\+\_\+year.\+h@{get\+\_\+year.\+h}}
-\subsubsection{\texorpdfstring{Z\+E\+RO}{ZERO}}
-{\footnotesize\ttfamily \#define Z\+E\+RO~0}
-
-
-
-Definition at line 14 of file get\+\_\+year.\+h.
-
-
-
 \subsection{Function Documentation}
-\mbox{\Hypertarget{get__year_8h_a1eeb5dfb948a4386a4c6283c7a9ebcf8}\label{get__year_8h_a1eeb5dfb948a4386a4c6283c7a9ebcf8}} 
-\index{get\+\_\+year.\+h@{get\+\_\+year.\+h}!get\+\_\+year@{get\+\_\+year}}
-\index{get\+\_\+year@{get\+\_\+year}!get\+\_\+year.\+h@{get\+\_\+year.\+h}}
-\subsubsection{\texorpdfstring{get\+\_\+year()}{get\_year()}}
-{\footnotesize\ttfamily int get\+\_\+year (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
-
-Inserimento da tastiera dell\textquotesingle{}anno di cui calcolare la Pasqua \begin{DoxyPostcond}{Postcondition}
-l\textquotesingle{}anno deve essere compreso tra il 1584 e il 2499 
+\hypertarget{get__year_8h_a1eeb5dfb948a4386a4c6283c7a9ebcf8}{\index{get\-\_\-year.\-h@{get\-\_\-year.\-h}!get\-\_\-year@{get\-\_\-year}}
+\index{get\-\_\-year@{get\-\_\-year}!get_year.h@{get\-\_\-year.\-h}}
+\subsubsection[{get\-\_\-year}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-year (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{get__year_8h_a1eeb5dfb948a4386a4c6283c7a9ebcf8}
+Inserimento da tastiera dell'anno di cui calcolare la Pasqua \begin{DoxyPostcond}{Postcondition}
+l'anno deve essere compreso tra il 1584 e il 2499 
 \end{DoxyPostcond}
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
 
 
-Definition at line 10 of file get\+\_\+year.\+c.
+Definition at line 13 of file get\-\_\-year.\-c.
 
 
 
-References S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+I\+NT, S\+T\+R\+I\+NG, and Z\+E\+RO.
+References S\-P\-E\-C\-I\-F\-I\-C\-\_\-\-I\-N\-T, and S\-T\-R\-I\-N\-G.
 

@@ -10,7 +10,6 @@
 
 #include <assert.h>
 #include <stdbool.h>
-
 #include "../../print_easter/is_valid/is_valid.h"
 
 

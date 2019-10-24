@@ -12,8 +12,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-#include "../print_easter/easter/easter.h"
-#include "../print_easter/is_valid/is_valid.h"
+#include "easter/easter.h"
+#include "is_valid/is_valid.h"
 
 #define DATE             "Data della Santa Pasqua: %d %s"
 #define BAR    			 "\n==================================\n"
