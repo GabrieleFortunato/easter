@@ -6,6 +6,7 @@
  */
 
 #include "easter.h"
+#include <stdbool.h>
 
 static const int ZERO = 0;
 static const int ONE = 1;
@@ -88,8 +89,8 @@ static bool easter_nineteen(int year){
 static bool easter_twentyfive(int year){
 	return
 			(d(year) + e(year)-NINE) == TWENTYSIX &&
-			a(year) > TEN && d(year) == TWENTYEIGHT
-			&& e(year) == SIX;
+			a(year) > TEN && d(year) == TWENTYEIGHT &&
+			e(year) == SIX;
 }
 
 int day(int year){
